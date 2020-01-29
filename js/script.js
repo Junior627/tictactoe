@@ -1,12 +1,21 @@
 
-
-
-
-
-
+ let palwtwy = "x";
+function tic(){
+  if(palwtwy==="x"){
+    palwtwy="o";
+  }
+  else if(palwtwy==="o"){
+    palwtwy="x";
+  }
+}
+function performLogic(button,tile){
+  $(tile).text(palwtwy);
+  tic();
+}
 
 $("#button1").click(function() {
     performLogic("#button1","#tile1");
+
 });
 
 $("#button2").click(function() {
@@ -41,3 +50,10 @@ $("#button9").click(function() {
     performLogic("#button9","#tile9");
 });
 
+function rowOn(){
+      
+}
+
+function boardStatus(){
+
+}
